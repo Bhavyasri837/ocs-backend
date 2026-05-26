@@ -1,7 +1,9 @@
-services:
+
+
+    services:
   - type: web
     name: ocs-backend
-    env: java
+    runtime: java
     buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/MediCareConnect-0.0.1-SNAPSHOT.jar"
     plan: free
